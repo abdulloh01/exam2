@@ -47,7 +47,18 @@
             </div>
           </nav>
         </header>
+
+        <div id="loading">
+            <div class="loadingio-spinner-rolling-1cecdl9u517i"><div class="ldio-0dt0uqkl4pb7">
+                <div></div>
+                </div></div>
+        </div>
       
+        <a href="#">
+            <div id="backtop">
+                <img src="../assets/images/arrow.png" alt="">
+            </div>
+        </a>
 
     <main class="main">
         <section class="form">
@@ -260,5 +271,15 @@
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+        const loading = document.getElementById("loading");
+
+        const loadingDuration = 2000; // 2s
+
+        setTimeout(() => {
+         loading.classList.add('loading-none');
+        }, loadingDuration);
+    </script>
 </body>
 </html>
