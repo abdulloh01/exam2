@@ -1,0 +1,99 @@
+@use "../utils/mixins" as mix;
+@use "../utils/variables" as var;
+
+.subscribe{
+    margin-bottom: -200px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.subscribe__sec{
+    box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.20);
+    padding: 64px 0;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background-color: var.$primary-color;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.subscribe__desc{
+    h4{
+        margin-bottom: 24px;
+        color: var(--FFFFFF, #FFF);
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro5;
+        text-align: center;
+        font-size: 23px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 0.92px;
+        text-transform: capitalize;
+    }
+    h2{
+        margin-bottom: 24px;
+        color: #FFF;
+        text-align: center;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro5;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+    }
+    p{
+        margin-bottom: 64px;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 175%;
+        letter-spacing: 0.64px;
+    }
+    @media(max-width:500px){
+        & h4{
+            font-size: 18px;
+        }
+        & h2{
+            font-size: 28px;
+        }
+        & p{
+            font-size: 13px;
+        }
+    }
+}
+.email__input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    height: 52px;
+    color: white !important;
+    background-color: transparent   ;
+    border-radius: 100px;
+    border: 1px solid rgba(245, 239, 219, 0.50);  
+    &:focus{
+        background-color: transparent;
+        outline: none;
+    }
+    &::placeholder{
+        color: #aaa;
+    }
+}
+
+.subscribe__btn{
+    @include mix.btn2;
+    background-color: transparent;
+    font-family: Cera Round Pro1;
+    &:hover{
+        background-color: var.$btn-hover-color;
+        border: 1px solid white;
+    }
+}
+
+@media(max-width:400px){
+    .subscribe{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

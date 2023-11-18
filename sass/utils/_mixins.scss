@@ -1,0 +1,56 @@
+@use "../utils/variables" as var;
+
+@mixin btn1 {
+    padding: 10px 40px;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+}
+
+@mixin btn2{
+    padding: 12px 32px;
+    color: #FFF;
+    font-family: Cera Round Pro;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+}
+
+@mixin btn3{
+    padding: 8px 32px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    color: #FFF;
+    font-family: Cera Round Pro2;
+    background-color: var.$primary-color;
+    &:hover{
+        background-color: var.$btn-hover-color;
+    }
+}
+
+@mixin btn__tab{
+    padding: 10px 30px;
+    color: var.$black-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 175%;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    border: 1px solid var.$primary-color;
+    background-color: transparent;
+}

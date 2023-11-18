@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/news.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler humburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="../assets/images/logo.svg" alt="logo">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav gap-4 justify-content-end flex-grow-1 pe-3 align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="./restaurant.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-outline-success nav__btn" type="submit">Log in</button>
+                        </a>
+                    </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="main">
+        <section class="subscribe">
+            <div class="subscribe__sec container">
+                <div class="subscribe__desc">
+                    <h4>
+                        Newsletter
+                    </h4>
+                    <h2>
+                        Subscribe to Our Newsletter
+                    </h2>
+                    <p>
+                        And never miss latest Updates!
+                    </p>
+                    <form class="row g-3 d-flex justify-content-center">
+                        <div class="col-sm-5 col-10">
+                          <label for="inputPassword2" class="visually-hidden">Password</label>
+                          <input required type="email" class="form-control email__input" id="inputPassword2" placeholder="Email Address">
+                        </div>
+                        <div class="col-sm-auto col-10 text-center">
+                          <button type="submit" class="btn btn-primary mb-3 subscribe__btn">Subscribe</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__sec container d-flex justify-content-between flex-column  gap-5 flex-lg-row gap-lg-0">
+                <div class="contact__footer text-center">
+                    <h3 class="footer__head1">
+                        Contact Us
+                    </h3>
+                    <p>
+                        9 W 53rd St, London, NY 10019, UK
+                    </p>
+                    <a href="tel:+1 212-344-1230">
+                        +1 212-344-1230
+                    </a> <br>
+                    <a href="tel:+1 212-555-1230">
+                        +1 212-555-1230
+                    </a>
+                </div>
+                <div class="logo__footer text-center ">
+                    <div class="footer__logo__div mx-auto mx-lg-0">
+                        <img class="footer__logo" src="../assets/images/footer-logo.svg" alt="logo">
+                    </div>
+                    <p class="mx-auto mx-lg-0">
+                        "The best way to find yourself is to lose yourself in the service of others.”
+                    </p>
+                    <div class="social-media__icons d-flex justify-content-center gap-3">
+                        <a href="#">
+                            <img src="../assets/images/facebook-icon.svg" alt="facebook icon">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/images/twitter-icon.svg" alt="twitter icon">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/images/insta-iconn.svg" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="work__hours text-center">
+                    <h3 class="footer__head">
+                        Working Hours
+                    </h3>
+                    <p class="mx-auto">
+                        Monday-Friday:
+                        08:00 am -12:00 am
+                    </p>
+                    <p class="mx-auto">
+                        Saturday-Sunday:
+                        07:00am -11:00 pm
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="date">
+            <p>
+                2022 Pop online. All Rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

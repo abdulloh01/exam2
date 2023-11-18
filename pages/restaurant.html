@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/restaurant.min.css">
+    
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top" id="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../assets/images/logo.svg" alt="logo">
+              </a>
+              <button class="navbar-toggler humburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <img src="../assets/images/logo.svg" alt="logo">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav gap-4 justify-content-end flex-grow-1 pe-3 align-items-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">
+                            <button class="btn btn-outline-success nav__btn" type="submit">Log in</button>
+                        </a>
+                    </li>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main class="main">
+        <section class="regular__menu">
+            <div class="regular__menu__sec container">
+                <div class="d-flex align-items-start flex-column flex-md-row gap-5">
+                    <div class="tab2__btns nav flex--column mx-auto nav-pills me-md-3 " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <h2>
+                            Our Regular Menu Pack
+                        </h2>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#kebabs" type="button" role="tab" aria-controls="kebabs" aria-selected="false">KEBABS</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pides" type="button" role="tab" aria-controls="pides" aria-selected="false">PIDES</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#burgers" type="button" role="tab" aria-controls="burgers" aria-selected="false">BURGERS</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#other-dishes" type="button" role="tab" aria-controls="other-dishes" aria-selected="false">OTHER DISHES</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#sides" type="button" role="tab" aria-controls="sides" aria-selected="false">SIDES</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#drinks" type="button" role="tab" aria-controls="drinks" aria-selected="false">DRINKS</button>
+                      <button class="tab__2__btn rounded-pill mb-2 nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#desserts" type="button" role="tab" aria-controls="desserts" aria-selected="false">DESSERTS</button>
+                      <button class="tab__2__btn rounded-pill  nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#meal-deals" type="button" role="tab" aria-controls="meal-deals" aria-selected="false">MEAL DEALS</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
+                        <div class="row d-flex row-gap-4 justify-content-center justify-content-sm-evenly">
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                                <div class="tab__card">
+                                    <img src="../assets/images/mebu-1.svg" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-2.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-3.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-4.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-5.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-36.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-7.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-8.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-9.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                                <div class="tab__card">
+                                    <img src="../assets/images/menu-10.png" alt="menu">
+                                    <h4>
+                                        Barbecue Shish kebab Shashlik Skewer
+                                    </h4>
+                                    <p>
+                                        $12.00  
+                                    </p>
+                                </div>
+                            </div>
+                           <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center align-items-center">
+                            <div class="tab__card">
+                                <img src="../assets/images/menu-11.png" alt="menu">
+                                <h4>
+                                    Barbecue Shish kebab Shashlik Skewer
+                                </h4>
+                                <p>
+                                    $12.00  
+                                </p>
+                            </div>
+                            <div class="tab__card">
+                                <img src="../assets/images/menu-12.png" alt="menu">
+                                <h4>
+                                    Barbecue Shish kebab Shashlik Skewer
+                                </h4>
+                                <p>
+                                    $12.00  
+                                </p>
+                            </div>
+                           </div>
+                        </div>
+                    </div>
+                      </div>
+                      <div class="tab-pane fade" id="kebabs" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                        
+                      </div>
+                      <div class="tab-pane fade" id="pides" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
+                    
+                      </div>
+                      <div class="tab-pane fade" id="burgers" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
+            
+                      </div>
+                      <div class="tab-pane fade" id="other-dishes" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+    
+                      </div>
+                      <div class="tab-pane fade" id="sides" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+    
+                      </div>
+                      <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+    
+                      </div>
+                      <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+    
+                      </div>
+                      <div class="tab-pane fade" id="meal-deals" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
+    
+                      </div>
+                    </div>
+            </div>
+        </section>
+        <section class="photo__galery">
+            <div class="photo__galery__sec container d-flex justify-content-between  align-items-center">
+                <div class="photo__galery__desc">
+                    <h4>
+                        Instagram
+                    </h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="9" viewBox="0 0 40 9" fill="none">
+                        <path d="M33.5016 9C37.0849 9 40 6.98129 40 4.49995C40 2.01861 37.0849 0 33.5016 0C30.1122 0 27.3221 1.80637 27.03 4.1018H22.3529V3.1552L0 3.1552V5.84446L22.353 5.84446V4.89798H27.0301C27.3223 7.19352 30.1122 9 33.5016 9ZM21.4898 5.04839L0.863293 5.04839V3.95161L21.4898 3.95161V5.04839ZM27.8662 4.49995C27.8662 2.45778 30.3944 0.796403 33.5017 0.796403C36.6091 0.796403 39.1372 2.45778 39.1372 4.49995C39.1372 6.54222 36.6091 8.2037 33.5017 8.2037C30.3944 8.2037 27.8662 6.54222 27.8662 4.49995Z" fill="#BB2339"/>
+                      </svg>
+                    <h2>
+                        Photo Gallery
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
+                    </p>
+                    <button class="galery__btn">
+                        View More
+                    </button>
+                </div>
+                <div class="carousel__galery">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galdery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                        <div class="item galery__item overflow-hidden">
+                            <img src="../assets/images/galery-1.png" alt="">
+                            <img class="galery__hover" src="../assets/images/galery-hover.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="subscribe__sec container">
+                <div class="subscribe__desc">
+                    <h4>
+                        Newsletter
+                    </h4>
+                    <h2>
+                        Subscribe to Our Newsletter
+                    </h2>
+                    <p>
+                        And never miss latest Updates!
+                    </p>
+                    <form class="row g-3 d-flex justify-content-center">
+                        <div class="col-sm-5 col-10">
+                          <label for="inputPassword2" class="visually-hidden">Password</label>
+                          <input required type="email" class="form-control email__input" id="inputPassword2" placeholder="Email Address">
+                        </div>
+                        <div class="col-sm-auto col-10 text-center">
+                          <button type="submit" class="btn btn-primary mb-3 subscribe__btn">Subscribe</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__sec container d-flex justify-content-center flex-column  gap-5 flex-lg-row gap-lg-0">
+                <div class="contact__footer text-center">
+                    <h3 class="footer__head1">
+                        Contact Us
+                    </h3>
+                    <p>
+                        9 W 53rd St, London, NY 10019, UK
+                    </p>
+                    <a href="tel:+1 212-344-1230">
+                        +1 212-344-1230
+                    </a> <br>
+                    <a href="tel:+1 212-555-1230">
+                        +1 212-555-1230
+                    </a>
+                </div>
+                <div class="logo__footer text-center ">
+                    <div class="footer__logo__div mx-auto mx-lg-0">
+                        <img class="footer__logo" src="../assets/images/footer-logo.svg" alt="logo">
+                    </div>
+                    <p class="mx-auto mx-lg-0">
+                        "The best way to find yourself is to lose yourself in the service of others.”
+                    </p>
+                    <div class="social-media__icons d-flex justify-content-center gap-3">
+                        <a href="#">
+                            <img src="../assets/images/facebook-icon.svg" alt="facebook icon">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/images/twitter-icon.svg" alt="twitter icon">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/images/insta-iconn.svg" alt="instagram icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="work__hours text-center">
+                    <h3 class="footer__head">
+                        Working Hours
+                    </h3>
+                    <p class="mx-auto">
+                        Monday-Friday:
+                        08:00 am -12:00 am
+                    </p>
+                    <p class="mx-auto">
+                        Saturday-Sunday:
+                        07:00am -11:00 pm
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="date">
+            <p>
+                2022 Pop online. All Rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

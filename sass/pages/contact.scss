@@ -1,0 +1,156 @@
+@use "../glabal.scss";
+@use "../utils/mixins" as mix;
+@use "../utils/variables" as var;
+
+.main{
+    padding-top: 90px;
+}
+
+.form{
+    padding-top: 70px;
+    padding-bottom: 110px;
+}
+
+.contact__header{
+    h1{
+        margin-bottom: 8px;
+        color: var.$black-color;
+        text-align: center;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro3;
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.92px;
+        text-transform: capitalize;
+    }
+
+    svg{
+        margin-bottom: 40px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.social__media__name{
+    color: var.$black-color;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.social__media{
+    color: #242424;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social__media__card{
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(36, 36, 36, 0.10);
+    background: #FFF;
+}
+
+.contact__btn{
+    @include mix.btn__tab;
+}
+
+.massage{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    border-radius: 14px;
+    border: 1px solid rgba(36, 36, 36, 0.10);
+    background: #FFF;
+    h2{
+        margin-bottom: 16px;
+        color: #242424;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 34px;
+    }
+    p{
+        margin-bottom: 40px;
+        max-width: 565px;
+        color: #242424;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        opacity: 0.7;
+    }
+
+}
+
+.contact__btn{
+    transition: 0.4s;
+    &:hover{
+        background-color: var.$primary-color;
+    color: white;
+    }
+}
+
+form{
+    input{
+        height: 58px;
+        max-width: 345px;
+        margin-bottom: 15px;
+    }
+}
+
+.tel__input, .subject__input{
+    max-width: 345px;
+    height: 58px;
+}
+textarea{
+    margin-bottom: 50px;
+    max-width: 755px;
+}
+
+.inframe__header{
+    h2{
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro3;
+        font-size: 38px;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 1.14px;
+        text-transform: capitalize;
+    }
+}
+
+.map{
+    max-width: 1205px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inframe__map{
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: 703px;
+}
+
+@media(max-width:500px){
+    .inframe__header{
+        h2{
+            font-size: 28px;
+        }
+    }
+    .contact__header{
+        h1{
+            font-size: 36px;
+        }
+    }
+}

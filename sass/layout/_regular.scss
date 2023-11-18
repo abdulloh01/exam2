@@ -1,0 +1,104 @@
+@use "../utils/mixins" as mix;
+@use "../utils/variables" as var;
+
+.regular__menu{
+    padding-top:  120px;
+    padding-bottom: 120px;
+}
+
+.regular__menu__header{
+    h2{
+        margin-bottom: 60px;
+        color: var.$primary-color;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro3;
+        font-size: 48px;
+        font-weight: 500;
+        letter-spacing: 1.44px;
+        text-transform: capitalize;
+    }
+    @media(max-width:500px){
+        & h2{
+            font-size: 28px;
+        }
+    }
+}
+
+.tab__2__btn{
+    @include mix.btn__tab;
+    border: 1px solid white !important;
+    color: white !important;
+    width: 185px;
+    &:hover{
+        color: var.$black-color;
+    }
+}
+
+.tab2__btns {
+    padding: 50px 40px 54px 40px;
+    max-width: 348px;
+    background-color: var.$primary-color;
+    border-radius: 20px;
+    h2{
+        color: #FFF;
+        font-variant-numeric: lining-nums tabular-nums;
+        font-family: Cera Round Pro3;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 54px;
+        text-transform: capitalize;
+    }
+    .active{
+        background-color: var.$btn-hover-color !important;
+        border: 1px solid white;
+    }
+}
+
+.tab__card{
+    padding: 5px;   
+    max-width: 310px;
+    border-radius: 14px;
+    border: 1px solid rgba(36, 36, 36, 0.10);
+    background: #FFF;
+    transition: 0.3s;
+    &:hover{
+        background-color: var.$primary-color;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        h4{
+            color: white;
+        }
+        p{
+            color: white;
+        }
+    }
+    img{
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+    h4{
+        max-width: 270px;
+        color: var.$black-color;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        transition: 0.4s;
+    }
+    p{
+        color: var.$primary-color;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        transition: 0.4s;
+    }
+    @media(max-width:350px){
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+.btn-5{
+    width: 200px;
+}
